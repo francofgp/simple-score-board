@@ -19,10 +19,13 @@ const Timer = ({ maxMinutes }) => {
     restart,
   } = useTimer({ autoStart: false, expiryTimestamp: initialTime(), onExpire: () => console.warn('onExpire called') })
 
+  const formatTime = (time) => (time < 10 ? `0${time}` : time);
+
+
   return (
     <div /* className="timer" */>
       <div className='time-container'>
-        <span>{minutes}</span>:<span>{seconds}</span>
+        <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
       <p>{isRunning ? '🏃' : '🛑'}</p>
       <button onClick={start} className="btn" title='Comenzar'><BsPlay /></button>

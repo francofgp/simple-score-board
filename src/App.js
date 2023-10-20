@@ -6,13 +6,13 @@ function App() {
   return (
     <main className='page'>
       <header className='header'>
-        <h1>Puntaje</h1>
+        <h1>Scoreboard</h1>
       </header>
       <div className='boards-container'>
         <Board scoreBoard={1} />
       </div>
       <footer className='footer'>
-        Designed By <a href='https://github.com/francofgp'>francofgp - DreamTeam</a>
+        Designed By <a href='https://github.com/francofgp'><b>francofgp - DreamTeam</b></a>
       </footer>
     </main>
   )
