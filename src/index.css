@@ -70,7 +70,7 @@ body {
   /*   background-color: aliceblue; */
   color: grey;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -185,6 +185,13 @@ SINGLE TEAM
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.text-scale {
+  transform: scale(2);
+  /* Escala predeterminada, sin cambio en el tamaño de fuente */
+  display: inline-block;
+  /* Esto evita que la escala afecte a otros elementos en la misma línea */
 }
 
 .team-name {
