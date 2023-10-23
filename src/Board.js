@@ -7,8 +7,8 @@ import { BiCog } from 'react-icons/bi';
 import { BiTime } from 'react-icons/bi';
 
 const Board = ({ scoreBoard }) => {
-  const [maxPoints, setMaxPoints] = useState(12); // 12 as default max points
-  const [maxTime, setMaxTime] = useState(25); // 12 as default max points
+  const [maxPoints, setMaxPoints] = useState(100); // 100 as default max points
+  const [maxTime, setMaxTime] = useState(20); // 20 as default max points
   const [winner, setWinner] = useState('');
 
   const [localName, setLocalName] = useState('local');

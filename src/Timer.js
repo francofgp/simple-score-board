@@ -53,7 +53,7 @@ const Timer = ({ maxMinutes }) => {
       <div className='time-container text-scale-half'>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
-      <p>{isRunning ? '🏃' : '🛑'}</p>
+      <p>{isRunning ? '🟢' : '🛑'}</p>
       <button onClick={start} className="btn" title='Comenzar'><BsPlay /></button>
       <button onClick={pause} className="btn" title='Pausar'><BsPause /></button>
       <button onClick={() => restart(initialTime(), false)} className="btn" title='Reiniciar'><BsStop /></button>

@@ -12,9 +12,9 @@ const Team = ({ team, incrementPoints, decrementPoints, resetPoints }) => {
                 <div>
                     <h2 className='text-scale team-points'>{team.points}</h2>
                     <div className="team-btn-container">
-                        <button onClick={incrementPoints} className='btn' title='Incrementar un punto'><BiUpArrow /></button>
-                        <button onClick={decrementPoints} className='btn' title='Decrementar un punto'><BiDownArrow /></button>
-                        <button onClick={resetPoints} className='btn' title='Levar puntos a cero (0)'><BiReset /></button>
+                        <button onClick={incrementPoints} className='btn' title='Incrementar punto'><BiUpArrow /></button>
+                        <button onClick={decrementPoints} className='btn' title='Decrementar punto'><BiDownArrow /></button>
+                        <button onClick={resetPoints} className='btn' title='Resetear puntos'><BiReset /></button>
                     </div>
                 </div>
                 : <h2 className='text-scale team-points'>{team.points}</h2>
