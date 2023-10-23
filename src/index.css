@@ -194,6 +194,13 @@ SINGLE TEAM
   /* Esto evita que la escala afecte a otros elementos en la misma línea */
 }
 
+.text-scale-half {
+  transform: scale(1.5);
+  /* Escala predeterminada, sin cambio en el tamaño de fuente */
+  display: inline-block;
+  /* Esto evita que la escala afecte a otros elementos en la misma línea */
+}
+
 .team-name {
   font-size: x-large;
   color: black;

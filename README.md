@@ -29,3 +29,15 @@ If you find something wrong or something is not working, please just let me know
 **ENJOY IT :)**
 
 **_PS_**: in **src/App.js** you can add more matches if you wish :)
+
+
+## Shorcuts
+
+- Space Bar: Start/Reset Timer
+- R: Restart Time
+- Q: +1 Point to Team 1 - Local
+- S: -1 Pont to Team 1 - Local
+- P: +1 Point to Team 2 - Visitante
+- L: -1 Pont to Team 2 -Visitante
+- X: Restart Score
+
