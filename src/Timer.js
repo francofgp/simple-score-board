@@ -48,14 +48,22 @@ const Timer = ({ maxMinutes }) => {
     };
   }, [isRunning]);
 
+    // Función para simular la pulsación de la barra espaciadora
+    const simulateSpaceKey = () => {
+      const spaceKeyEvent = new KeyboardEvent('keydown', {
+        key: ' ',
+      });
+      document.dispatchEvent(spaceKeyEvent);
+    };
+    
   return (
     <div /* className="timer" */>
       <div className='time-container text-scale-half'>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
       <p>{isRunning ? '🟢' : '🛑'}</p>
-      <button onClick={start} className="btn" title='Comenzar'><BsPlay /></button>
-      <button onClick={pause} className="btn" title='Pausar'><BsPause /></button>
+      <button onClick={simulateSpaceKey} className="btn" title='Comenzar'><BsPlay /></button>
+      <button onClick={simulateSpaceKey} className="btn" title='Pausar'><BsPause /></button>
       <button onClick={() => restart(initialTime(), false)} className="btn" title='Reiniciar'><BsStop /></button>
     </div>
   );
