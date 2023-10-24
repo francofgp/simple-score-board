@@ -195,7 +195,7 @@ SINGLE TEAM
 }
 
 .text-scale-half {
-  transform: scale(1.5);
+  transform: scale(1.4);
   /* Escala predeterminada, sin cambio en el tamaño de fuente */
   display: inline-block;
   /* Esto evita que la escala afecte a otros elementos en la misma línea */
