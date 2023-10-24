@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BsPlay, BsPause, BsStop } from 'react-icons/bs';
 import { useTimer } from 'react-timer-hook';
+import { HiOutlinePlayPause } from "react-icons/hi2";
 
 const Timer = ({ maxMinutes }) => {
   function initialTime() {
@@ -62,9 +63,9 @@ const Timer = ({ maxMinutes }) => {
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
       <p>{isRunning ? '🟢' : '🛑'}</p>
-      <button onClick={simulateSpaceKey} className="btn" title='Comenzar'><BsPlay /></button>
-      <button onClick={simulateSpaceKey} className="btn" title='Pausar'><BsPause /></button>
-      <button onClick={() => restart(initialTime(), false)} className="btn" title='Reiniciar'><BsStop /></button>
+      <button onClick={simulateSpaceKey} className="btn" title='Comenzar'><HiOutlinePlayPause /></button>
+{/*       <button onClick={simulateSpaceKey} className="btn" title='Pausar'><BsPause /></button>
+ */}      <button onClick={() => restart(initialTime(), false)} className="btn" title='Reiniciar'><BsStop /></button>
     </div>
   );
 }
