@@ -201,11 +201,19 @@ SINGLE TEAM
   /* Esto evita que la escala afecte a otros elementos en la misma línea */
 }
 
+.text-scale-three-quarter {
+  transform: scale(1.75);
+  /* Escala predeterminada, sin cambio en el tamaño de fuente */
+  display: inline-block;
+  /* Esto evita que la escala afecte a otros elementos en la misma línea */
+}
+
 .team-name {
-  font-size: x-large;
+  font-size: 5em;
+  text-align: center;
   color: black;
   text-transform: capitalize;
-  max-width: 100px;
+  max-width: 10em;
   margin-left: auto;
   margin-right: auto;
 }

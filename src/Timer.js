@@ -50,7 +50,7 @@ const Timer = ({ maxMinutes }) => {
 
   return (
     <div /* className="timer" */>
-      <div className='time-container text-scale-half'>
+      <div className='time-container text-scale-three-quarter'>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
       <p>{isRunning ? '🟢' : '🛑'}</p>

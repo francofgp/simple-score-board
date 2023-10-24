@@ -112,7 +112,7 @@ const Board = ({ scoreBoard }) => {
     <div className='single-board'>
       {showWinner && <Winner winner={winner} closeModal={closeModal} />}
       <div className='board-header'>
-        {/* <h2>Cancha {scoreBoard}</h2> */}
+        <h2>Cancha {scoreBoard}</h2> 
         <div className='btn-container'>
           {isConfigOpen || (
             <button onClick={() => { setTimerOpen(!isTimerOpen) }} className='btn btn-time' title='Tiempo para Práctica'><BiTime /></button>

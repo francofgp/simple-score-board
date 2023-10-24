@@ -33,7 +33,7 @@ const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, cur
             <div>Puntaje Máximo</div>
             <input type='number' defaultValue='12' min='1' max='99' step='1' name='maxPoints' className='max-points' title='Puntos para ganar el partido' />
             <div>Tiempo Máximo</div>
-            <input type='number' defaultValue={currentTime} min='1' max='59' step='1' name='maxTime' className='max-points' title='Duración del partido' />
+            <input type='number' defaultValue={currentTime} min='1' max='59' step='0.1' name='maxTime' className='max-points' title='Duración del partido' />
 
             <div className='btn-config-container'>
                 <button type='submit' className='btn btn-enter-config' title='Guardar datos'><ImEnter /></button>
