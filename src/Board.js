@@ -122,7 +122,7 @@ const Board = ({ scoreBoard }) => {
           )}
         </div>
       </div>
-      {isConfigOpen && <ConfigBoard setLocalName={setLocalName} setGuestName={setGuestName} setMaxPoints={setMaxPoints} setMaxTime={setMaxTime} currentTime={maxTime} setIsConfigOpen={setIsConfigOpen} />}
+      {isConfigOpen && <ConfigBoard setLocalName={setLocalName} setGuestName={setGuestName} setMaxPoints={setMaxPoints} setMaxTime={setMaxTime} currentTime={maxTime} setIsConfigOpen={setIsConfigOpen} maxPoints={maxPoints}/>}
       {isTimerOpen && <Timer maxMinutes={maxTime} />}
       <Team
         team={{ name: localName, points: localPoints }}

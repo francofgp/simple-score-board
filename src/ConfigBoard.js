@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BiReset } from 'react-icons/bi';
 import { ImEnter } from 'react-icons/im';
 
-const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, currentTime,setIsConfigOpen }) => {
+const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, currentTime,setIsConfigOpen, maxPoints }) => {
   const [formVisible, setFormVisible] = useState(true);
 
   const validateInput = (e) => {
@@ -22,7 +22,7 @@ const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, cur
   };
 
   const resetValues = () => {
-    setMaxPoints(99);
+    setMaxPoints(100);
     setLocalName('local');
     setGuestName('visitante');
     setMaxTime(20);
@@ -37,7 +37,7 @@ const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, cur
           <div>visitante</div>
           <input type='text' name='guest' defaultValue='visitante' minLength='3' maxLength='17' title='Nombre de equipo VISITANTE' />
           <div>Puntaje Máximo</div>
-          <input type='number' defaultValue='12' min='1' max='99' step='1' name='maxPoints' className='max-points' title='Puntos para ganar el partido' />
+          <input type='number' defaultValue={maxPoints} min='1' max='100' step='1' name='maxPoints' className='max-points' title='Puntos para ganar el partido' />
           <div>Tiempo Máximo</div>
           <input type='number' defaultValue={currentTime} min='1' max='59' step='0.1' name='maxTime' className='max-points' title='Duración del partido' />
 
