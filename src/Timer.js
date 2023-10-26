@@ -56,6 +56,14 @@ const Timer = ({ maxMinutes }) => {
       });
       document.dispatchEvent(spaceKeyEvent);
     };
+
+    // Función para simular la pulsación de la letra R
+    const simulateRKey = () => {
+      const rKeyEvent = new KeyboardEvent('keydown', {
+        key: 'r',
+      });
+      document.dispatchEvent(rKeyEvent);
+    };
     
   return (
     <div /* className="timer" */>
@@ -64,8 +72,8 @@ const Timer = ({ maxMinutes }) => {
       </div>
       <p>{isRunning ? '🟢' : '🛑'}</p>
       <button onClick={simulateSpaceKey} className="btn" title='Comenzar'><HiOutlinePlayPause /></button>
-{/*       <button onClick={simulateSpaceKey} className="btn" title='Pausar'><BsPause /></button>
- */}      <button onClick={() => restart(initialTime(), false)} className="btn" title='Reiniciar'><BsStop /></button>
+{/*       <button onClick={simulateSpaceKey} className="btn" title='Pausar'><BsPause /></button>*/}      
+      <button onClick={simulateRKey} className="btn" title='Reiniciar'><BsStop /></button>
     </div>
   );
 }

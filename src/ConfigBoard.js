@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BiReset } from 'react-icons/bi';
 import { ImEnter } from 'react-icons/im';
 
-const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, currentTime }) => {
+const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, currentTime,setIsConfigOpen }) => {
   const [formVisible, setFormVisible] = useState(true);
 
   const validateInput = (e) => {
@@ -17,6 +17,7 @@ const ConfigBoard = ({ setMaxPoints, setLocalName, setGuestName, setMaxTime, cur
       setGuestName(guestName);
       setMaxTime(maxTime);
       setFormVisible(false); // Ocultar el formulario después de guardar los datos
+      setIsConfigOpen(false)
     }
   };
 
