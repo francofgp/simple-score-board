@@ -12,7 +12,7 @@ function App() {
         <Board scoreBoard={1} />
       </div>
       <footer className='footer'>
-        Designed By <a href='https://github.com/francofgp'><b>francofgp - DreamTeam</b></a>
+        Designed By <a href='https://github.com/francofgp'><b>Phyros</b></a>
       </footer>
     </main>
   )
